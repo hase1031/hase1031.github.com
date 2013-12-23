@@ -1,6 +1,10 @@
 _site/*
 _theme_packages/*
 
+.idea
+.idea_modules
+target
+
 Thumbs.db
 .DS_Store
 
