@@ -9,16 +9,17 @@ tags: [typescript,trie]
 
 ## きっかけ
 作り始めた動機は3つ。
+
 1. もともと検索などで使われる技術に関わっていたいと思っていた
 2. ちょうど仕事でTypeScriptを使っていた
 3. オープンソースとして何か作ってみたかった
 
-そんなこんなで(datrie4ts)[http://github.com/hase1031/datrie4ts]を作った。
+そんなこんなで[datrie4ts](http://github.com/hase1031/datrie4ts)を作った。
 まだ全ての機能を兼ね揃えているわけではありませんが、前方一致検索はできていると思う。
 
 
 ## Trieについて
-Trieについては(日本語入力を支える技術)[http://amzn.to/1p2tnRJ]を読みながら勉強した。
+Trieについては[日本語入力を支える技術](http://amzn.to/1p2tnRJ)を読みながら勉強した。
 
 実はTrieって検索は速いけど、構築コストが高いのであまりJSとかに向いていない。
 (ローカルストレージとかに辞書を保存しない限りリロードすると消えるため)
@@ -38,7 +39,7 @@ Trieを一言で説明すると、エッジに文字情報の付いた木構造�
 インターフェイスについては、[dart](http://chasen.org/~taku/software/darts/)を見たりして考えて作った。
 その結果、構築、完全一致、共通接頭辞検索を用意した。
 
-~~~
+~~~ typescript
         /**
          * Builds the double array.
          *
