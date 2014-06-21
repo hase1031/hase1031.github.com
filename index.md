@@ -29,7 +29,7 @@ tagline: Supporting tagline
 ## Development
 
 - [datrie4ts](https://github.com/hase1031/datrie4ts)
- - Double Array Trie written in TypeScript
+    - Double Array Trie written in TypeScript
   
   
   
