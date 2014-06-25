@@ -16,19 +16,23 @@ tags: [scala,play]
 展開後、読み書きできる場所に起きます。
 
 次にPATHを通します。
+
 ~~~
 export PATH=$PATH:/relativePath/to/activator
 ~~~
 
 Windowsの場合はグローバルな環境変数に設定し、Unixの場合は実行可能ファイルにしておきます。
+
 ~~~
 bash chmod a+x activator
 ~~~
 
 終わったらコマンドが有効かどうかチェックします。
+
 ~~~
 activator -help
 ~~~
+
 ~~~
 $ activator -h
 Usage: activator <command> [options]
@@ -68,23 +72,27 @@ shows precedence: environment variables lowest, command line options highest.
 ## 新しいアプリケーションを作成する
 activatorコマンドを利用することでPlayのアプリケーションを作成することが可能です。
 様々なテンプレートから作ることができるのですが、今回はvanilla Play Scalaで作ります。
+
 ~~~
 $ activator new my-first-app play-scala
 ~~~
 
 アプリケーションを作ってしまえばactivatorコマンドで[Play console](http://www.playframework.com/documentation/2.3.x/PlayConsole)に入ることができます。
+
 ~~~
 $ cd my-first-app
 $ activator
 ~~~
 
 他にも[Activator UI](https://typesafe.com/activator/docs)を利用して作成する方法や、sbtを利用して作成する方法があります。
+
 ~~~
 $ activator ui
 ~~~
 
-sbtを利用する場合、~~~project/plugins.sbt~~~
-~~~scala
+sbtを利用する場合、`project/plugins.sbt`
+
+~~~ scala
 // The Typesafe repository
 resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 
@@ -92,8 +100,9 @@ resolvers += "Typesafe repository" at "http://repo.typesafe.com/typesafe/release
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.3.x")
 ~~~
 
-~~~build.sbt~~~
-~~~scala
+`build.sbt`
+
+~~~ scala
 name := "my-first-app"
 
 version := "1.0.0-SNAPSHOT"
@@ -110,6 +119,7 @@ $ sbt
 ## アプリケーションを動かしてみる
 さきほどのコンソールから作業します。
 デフォルトで9000番ポートが立ち上がるのですが、今回は2000番ポートを指定しました。
+
 ~~~
 [my-first-app] $ run 2000
 
@@ -125,10 +135,11 @@ p/target/scala-2.11/classes...
 ~~~
 
 実際にブラウザからアクセスしてみると…
-![Play Sample](http://www8096ui.sakura.ne.jp/~hasegawa/img/play.jpg)
+
+![Play Sample](http://www8096ui.sakura.ne.jp/~hasegawa/img/play.png)
 
 
 ## 最後に
 これで最低限の準備はできました。
-IntelliJを使っている方は、~~~[my-first-app] $ idea with-sources=yes~~~でプロジェクトを作成できます。
+IntelliJを使っている方は、`[my-first-app] $ idea with-sources=yes`でプロジェクトを作成できます。
 
