@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About me
-tagline: Supporting tagline
 ---
 {% include JB/setup %}
 
@@ -15,12 +14,11 @@ tagline: Supporting tagline
 | 2013 -      | 　　Gree,Inc. |
 |-------------|-----------|
 
-　
+
   
   
 ## Hobby
 
-* Watching soccer
 ![URAWA REDS](http://www8096ui.sakura.ne.jp/~hasegawa/img/urawa-reds.jpg)
   
   
@@ -45,3 +43,6 @@ tagline: Supporting tagline
 
   
   
+## Presentation
+
+  * [The Trial and Error in Releasing GREE Chat](http://www.slideshare.net/greetech/scala-maturi-scala) at [ScalaMatsuri 2014](http://scalamatsuri.org/) 
